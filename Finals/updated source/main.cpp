@@ -1478,7 +1478,7 @@ void credits()    // #16 devs and notices
 
 int main()    //Main function
 {
-	system("Color 0E");   // set background black '0' and forground ellow 'E'
+	system("Color 0E");   // set background black '0' and foreground yellow 'E'
 
 	std::string login_res = login();    // call login and store value to login res
 
@@ -1517,7 +1517,7 @@ int main()    //Main function
 		system("pause");
 		return 0;
 	}
-	// skip here if the else if are skipped. which means its granted
+	// skip here if the else is skipped. which mean its granted
 	loading(); // loading animation
 	Calculator calc;    // create object for the class
 	while (true)    // infinite while loop
@@ -1534,7 +1534,7 @@ int main()    //Main function
 		std::cout << "\n\n                                               Enter your selection: ";    // ask 
 		
 		char selection;
-		selection = _getch(); // get a character from the user, it waits for any key to be pressed and store it to the variable 
+		selection = _getch(); // get a character from the user, it waits for any key to be pressed and stores it to the variable 
 
 		if (selection == 'x' || selection == 'X')    // if 'x' or 'X' are inputed. break the infinite while loop. and goto line 1638 else goto line 1543
 		{
@@ -1543,7 +1543,7 @@ int main()    //Main function
 		switch (selection) // after the user pick a choice beside exit 'x'
 		{
 		case 'a': case 'A': // if the user chose 'a' execute this.
-			while (true)    // make a infinite loop 
+			while (true)    //makes an infinite loop 
 			{
 				system("cls");    // clear screen and print menu
 				std::cout << "~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*\n\n";
@@ -1562,7 +1562,7 @@ int main()    //Main function
 				{
 					break;
 				}
-				switch (operation) // else execute this Calculator class reference to line 1522 use calc as object
+				switch (operation) // else execute this Calculator class reference to line 1522 use calc as an object
 				{
 				case '1':
 					calc.add();   // call the add function line 82
